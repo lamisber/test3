@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import"./ProductsDetails.css";
 import type { Product } from "../types/Product";
+import { addToCart } from "../utils/cart";
 
 function ProductDetails() {
     const { id } = useParams();
@@ -60,7 +61,14 @@ function ProductDetails() {
 
                 <p>Rating: {product.rating} ⭐</p>
 
-                <button>Add To Cart</button>
+             <button
+    onClick={() => {
+        addToCart(product);
+        alert("Product added to cart!");
+    }}
+>
+    Add To Cart
+</button>
             </div>
         </div>
     );

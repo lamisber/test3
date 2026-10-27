@@ -1,0 +1,11 @@
+.home-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-background {
+    display: block;
+    width: 100%;
+height: fit-content;
+    object-fit: cover;
+}

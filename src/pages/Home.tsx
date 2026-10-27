@@ -1,9 +1,15 @@
+import "./Home.css";
+import homeBackground from "../assets/home-background.jpg";
+
 function Home() {
     return (
-        <div>
-            <h2>Welcome to Shop Flow!</h2>
-            <p>Discover our products and start shopping.</p>
-        </div>
+        <section className="home-page">
+            <img
+                src={homeBackground}
+                alt="Welcome to Shop Flow"
+                className="home-background"
+            />
+        </section>
     );
 }
 
